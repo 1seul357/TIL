@@ -1,43 +1,54 @@
 # Vue.js
 
-##### Vue.js
+### Vue.js
 
 - 사용자 인터페이스를 만들기 위한 자바스크립트 프레임워크
 - SPA(Single Page Application) 지원
 - DOM과 데이터 연결, 데이터 관리
 
-##### SPA
+
+
+### SPA
 
 - Single Page Application
-
 - 현재 페이지를 동적으로 렌더링함으로써 사용자와 소통하는 웹 애플리케이션
 - 서버로부터 최초에만 페이지를 다운로드하고, 이후에는 동적으로 DOM 구성 (필요한 부분만 동적으로 다시 작성)
 - 트래픽 감소, 사용성과 반응성 향상
 - 동작 원리의 일부가 CSR의 구조
 
-##### CSR
+
+
+### CSR
 
 - Client Side Rendering
 - 최초 요청 시 데이터를 제외한 리소스 응답받고, 클라이언트에서는 필요한 데이터만 요청해 DOM 렌더링
 - 클라이언트에서 화면 구성
 - 서버와 클라이언트 간 트래픽 감소, 사용자 경험 향상 / 렌더링 시점 느림, SEO 어려움
 
-##### SSR
+
+
+### SSR
 
 - Server Side Rendering
 - 서버에서 페이지 모두 구성하여 전달
 - 모든 요청마다 새로운 페이지 구성
 - 구동 속도 빠르고 SEO에 적합 / 트래픽 ↑, 사용자 경험 ↓
 
-##### Nuxt.js
+
+
+### Nuxt.js
 
 - Vue.js 응용 프로그램 만들기 위한 프레임 워크, SSR 지원
 
-##### Next.js
+
+
+### Next.js
 
 - React 응용 프로그램을 만들기 위한 프래임 워크, SSR 지원
 
-##### MVVM Pattern
+
+
+### MVVM Pattern
 
 - 애플리케이션 로직을 UI로부터 분리하기 위해 설계된 디자인 패턴
 - Model, View, View Model
@@ -45,11 +56,15 @@
   2. view : DOM(HTML). 데이터 값 변경에 따라 DOM 변화
   3. ViewModel : Vue Instance. View와 Model 사이에서 데이터와 DOM에 관련된 일 처리
 
-##### Vue.js 코드 작성 순서
+
+
+### Vue.js 코드 작성 순서
 
 - Data 로직 작성 -> DOM 작성
 
-##### Vue instance
+
+
+### Vue instance
 
 - Vue 인스턴스를 생성할 때는 Options객체 전달, 여러 Options들을 사용하여 원하는 동작 구현
 
@@ -66,7 +81,8 @@
   4. this 키워드 : Vue 함수 객체 내에서 vue 인스턴스를 가리킴
 
 
-##### Template Syntax
+
+### Template Syntax
 
 - 렌더링된 DOM을 기본 Vue 인스턴스의 데이터에 연결할 수 있는 HTML 기반 템플릿 구문 사용
   1. Interpolation : Text, Raw HTML, Attributes, JS표현식
@@ -113,16 +129,18 @@
 
 11. **Options/Assets - filter** : 텍스트 형식화를 적용할 수 있는 필터. interpolations 혹은 v-bind 이용할 때 사용.
 
-##### Lifecycle Hooks
+
+
+### Lifecycle Hooks
 
 - 각 Vue 인스턴스의 초기화 단계에서 사용자 로직 실행하는 것
 
 
-##### lodash library
+
+### lodash library
 
 - 모듈성, 성능 및 추가 기능을 제공하는 자바스크립트 유틸리티 라이브러리
 - reverse, sortBy, range, random
-
 
 
 

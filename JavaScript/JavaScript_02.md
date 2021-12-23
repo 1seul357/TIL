@@ -1,6 +1,6 @@
 # JavaScript
 
-##### AJAX
+### AJAX
 
 - Asynchronous JavaScript And XML (비동기식 JavaScript와 XML)
 
@@ -14,7 +14,9 @@
 
 - 페이지를 새로고침하지 않고서도 수행되는 비동기성(일부분만 업데이트)
 
-##### Asynchronous JavaScript
+
+
+### Asynchronous JavaScript
 
 - 동기식(Synchronous) : 순차적, 직렬적 Task 수행. 요청을 보낸 후 응답을 받아야만 다음 동작이 이루어짐
 
@@ -28,7 +30,7 @@
   1. 즉시 처리하지 못하는 이벤트들을 Web API에 줄을 세우고,
   2. 처리된 이벤트들은 처리된 순서대로 Task queue에 넣고,
   3. Casll Stack이 비면 Event Loop가 대기 줄에서 가장 오래된 이벤트를 Call Stack으로 보냄(FIFO)
-  
+
 - Concurrency model
 
   > Call Stack : 요청이 들어올 때마다 해당 요청을 순차적으로 처리하는 Stack(LIFO) 형태의 자료구조
@@ -43,7 +45,9 @@
 
 - 순차적인 비동기 처리 : Async callbacks, promise-style
 
-##### Callback function
+
+
+### Callback function
 
 - 다른 함수에 인자로 전달된 함수
 
@@ -61,7 +65,9 @@
 
 - callback Hell : 여러 개의 연쇄 비동기 작업할 때 발생 -> Promise 콜백 방식 사용
 
-##### Promise
+
+
+### Promise
 
 - 비동기 작업의 최종 완료 또는 실패를 나타내는 객체
 
@@ -101,14 +107,17 @@
   1. callback 함수는 Event Loop가 현재 실행 중인 Call Stack을 완료하기 이전에는 절대 호출되지 않음
   2. .then()을 여러번 사용하여 여러 개의 callback 함수 추가 가능(Chaining)
 
-##### Axios
+
+
+### Axios
 
 - 브라우저를 위한 Promis 기반의 클라이언트
 
 - 편리한 AJAX 요청 가능하게 함
 
+  
 
-##### async & await
+### async & await
 
 - 비동기 코드를 작성하는 방법, Promise 구조의 then chaining을 제거
 - Syntactic sugar : 더 쉽게 읽고 표현할 수 있도록 설계된 프로그래밍 언어 내의 구문

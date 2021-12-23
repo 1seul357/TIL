@@ -1,13 +1,15 @@
 # Vue
 
-##### vuex
+### vuex
 
 - 상태 관리 패턴 + 라이브러리
 - 상태(state)를 전역 저장소(store)로 관리할 수 있도록 지원하는 라이브러리
 - 애플리케이션의 모든 컴포넌트에 대한 중앙 집중식 저장소
 - 동일한 state를 공유하는 다른 컴포넌트들도 동기화
 
-##### vuex(2)
+
+
+### vuex(2)
 
 - State
 
@@ -41,7 +43,9 @@
   >
   > getters의 결과는 state 종속성에 따라 캐시되고, 종속성이 변경된 경우에만 재계산
 
-##### Compontent Binding Helper
+
+
+### Compontent Binding Helper
 
 - 배열 조작을 편하게 할 수 있도록 하는 것
 
@@ -53,13 +57,16 @@
 
 - mapMutations
 
-##### LocalStorage
+
+
+### LocalStorage
 
 - Vuex state : Vuex state를 자동으로 브라우저의 LocalStorage에 저장해주는 라이브러리
 
 - 페이지가 새로고침 되어도 Vuex state를 유지시킴
 
 
-##### actions 없이 mutations으로만 state를 변경해도 되는가?
+
+### actions 없이 mutations으로만 state를 변경?
 
 - 변경할 수 있다. 하지만 저장소의 각 컨셉은 역할이 존재하도록 설계되어 있다.
