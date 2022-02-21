@@ -1,10 +1,6 @@
 # React_01
 
-#### ✏️기본과제 3. Create Next App + React + Typescript + next.js
-
-
-
-#### 1) React
+### 1) React
 
 - 개념 : 사용자 인터페이스를 구축하기 위한 선언적이고 효율적이며 유연한 JavaScript 라이브러리
 
@@ -36,7 +32,7 @@
 
   
 
-#### 2) Next.js
+### 2) Next.js
 
 - React의 SSR을 쉽게 구현할 수 있게 도와주는 간단한 프레임워크
 
@@ -54,7 +50,7 @@
 
   
 
-#### 3) TypeScript
+### 3) TypeScript
 
 - JavaScript를 기반으로 정적 타입 문법을 추가한 프로그래밍 언어
 
@@ -72,7 +68,7 @@
 
   
 
-#### 4) 결과
+### 4) 결과
 
 - vs 코드로 프로젝트 열고, terminal에 아래 코드 입력 
 
