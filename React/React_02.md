@@ -107,7 +107,7 @@
 
 
 
-### 3) setState (1)
+#### 3) State
 
 ```html
 <!DOCTYPE html>
@@ -151,3 +151,47 @@
 - setCounter((current) => current + 1) : 함수형 업데이트. argument의 첫번째 요소는 현재 값, 리턴되는 값은 state
 
   > 확실히 현재 값이라는 것을 보장, 컴포넌트 최적화할 때 사용
+
+
+
+#### 4) Input
+
+```html
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="root"></div>
+  </body>
+  <script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="text/babel">
+    function App () {
+      const [minutes, setMinutes] = React.useState(0);
+      const [flipped, setFlipped] = React.useState(false);
+      const onChange = (event) => {
+        setMinutes(event.target.value);
+      };
+      const reset = () => setMinutes(0);
+      const onFlip = () => setFlipped((current) => !current);
+      return (
+        <div>
+          <h1>Super Converter</h1>
+          <label htmlFor="minutes">Minutes</label>
+          <input value={minutes} id="minutes" placeholder="Minutes" type="number" onChange={onChange} disabled={flipped === true}/>
+          <h4>You want to convert {minutes}</h4>
+          <label htmlFor="hours">Hours</label>
+          <input value={Math.round(minutes/60)} id="hours" placeholder="Hours" type="number" disabled={flipped === false} />
+          <button onClick={reset}>Reset</button>
+          <button onclick={onFlip}>Flip</button>
+        </div>
+      );
+    }
+    const root = document.getElementById("root");
+    ReactDOM.render(<App />, root);
+  </script>
+</html>
+```
+
+- label의 htmlFor와 input의 id를 같은 이름으로 설정
+- input의 value 값이 변하면(onChange) onChange 함수 실행 -> setMinutes으로 minutes 값 변경 -> 실시간으로 {minutes} 변경
