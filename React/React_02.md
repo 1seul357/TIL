@@ -1,6 +1,6 @@
 # React_02
 
-#### 1) React 기초
+### 1) React 기초
 
 ```html
 <!DOCTYPE html>
@@ -50,7 +50,7 @@
 
 
 
-#### 2) JSX
+### 2) JSX
 
 ```html
 <!DOCTYPE html>
@@ -107,7 +107,7 @@
 
 
 
-#### 3) State
+### 3) State
 
 ```html
 <!DOCTYPE html>
@@ -154,7 +154,7 @@
 
 
 
-#### 4) Input
+### 4) Input
 
 ```html
 <!DOCTYPE html>
