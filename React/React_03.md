@@ -97,7 +97,77 @@
 
 
 
-### 2) React Practice
+### 2) useEffect
+
+```react
+import { useEffect, useState } from "react";
+
+function App() {
+  const [counter, setValue] = useState(0);
+  const [keyword, setKeyword] = useState("");
+  const onClick = () => setValue((prev) => prev + 1)
+  const onChange = (event) => setKeyword(event.target.value);
+  console.log("i run all the time.")
+  useEffect(() => {
+    console.log("CLASS THE API...");       // 페이지가 마운트 되었을 때, 한번 실행
+  }, []);                              // deps가 빈 배열이므로
+  useEffect(() => {
+    // keyword가 null 값이 아니고, 길이가 5 이상이면 실행
+    if (keyword !== "" && keyword.length > 5) {    
+      console.log("SEARCH FOR", keyword);
+    }
+  }, [keyword]);                       // deps는 [keyword]
+
+  return (
+    <div>
+          <!--value값에 변화가 있으면 onChage 함수 실행-->
+      <input value={keyword} onChange={onChange} type="text" placeholder="Search here..."/>
+      <h1>{counter}</h1>
+      <button onClick={onClick}>click me</button>
+    </div>
+  )
+}
+
+export default App;
+```
+
+- useEffect : 컴포넌트가 마운트되었을 때, 언마운트 되었을 때, 업데이트 되었을 때 특정 작업 처리
+
+  > 첫 번째 파라미터에는 함수, 두 번째 파라미터에는 deps
+
+- deps : 특정 값이 들어가면 컴포넌트가 처음 마운트 될 때에도 호출, 지정한 값이 바뀔 때에도 호출, 언마운트 시에도 호출
+
+  > deps가 빈 값이라면 컴포넌트가 처음 나타날때에만 useEffect 함수 호출
+  
+  
+
+```react
+import { useEffect, useState } from "react";
+
+function Hello () {
+  useEffect(() => {
+    console.log('Im here!')
+  }, []);
+  return <h1>Hello</h1>;              // celanup 함수
+}
+
+function App () {
+  const [showing, setShowing] = useState(false);
+  const onClick = () => setShowing((prev) => !prev);
+  return <div>
+      {showing ? <Hello /> : null}
+      <button onClick={onClick}>{showing ? "Hide" : "Show"}</button>
+    </div>;
+}
+
+export default App;
+```
+
+- cleanup : useEffect에서 함수 반환 시 이를 cleanup 함수라고 함, deps가 비어있는 경우에는 컴포넌트가 사라질 때 cleanup 함수 호출
+
+  
+
+### 3) React Practice
 
 `npx create-react-app react-for-beginners`
 
