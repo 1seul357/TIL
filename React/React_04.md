@@ -156,7 +156,7 @@ function App () {
   return (
     <Router>
       <Switch>
-        <Route path="/movie">
+        <Route path="/movie/:id">
           <Detail />
         </Route>
         <Route path="/">
@@ -177,7 +177,20 @@ export default App;
 // routes/Detail.js
 
 
+import { useEffect } from "react";
+import { useParams } from "react-router-dom";
+
 function Datail () {
+  const {id} = useParams()
+  const getMovie = async () => {
+    const json = await(
+      await fetch(`https://yts.mx/api/v2/movie_details.json?movie_id=${id}`)
+    ).json();
+    console.log(json)
+  };
+  useEffect(() => {
+    getMovie();
+  }, []);
   return <h1>Detail</h1>;
 }
 
@@ -185,6 +198,10 @@ export default Datail;
 ```
 
 - url 주소가 `/movie`인 경우 보여지는 페이지
+
+- useParams : URL의 동적 매개 변수에 액세스 할 수있는 React Router Hook
+
+  > url 파라미터에 접근할 수 있음
 
 ```javascript
 // routes/Home.js
@@ -214,6 +231,7 @@ function Home () {
         <div>{movies.map((movie) => ( 
           <Movie
             key={movie.id}
+            id={movie.id}
             coverImg={movie.medium_cover_image}
             title={movie.title}
             summary={movie.summary}
@@ -237,17 +255,18 @@ export default Home;
 import PropTypes from "prop-types";
 import {Link} from "react-router-dom";
 
-function Movie({ coverImg, title, summary }) {
+function Movie({ id, coverImg, title, summary }) {
   return (
     <div>
       <img src={coverImg} alt={title} />
-      <h2><Link to="/movie">{title}</Link></h2>
+      <h2><Link to={`/movie/${id}`}>{title}</Link></h2>
       <p>{summary}</p>
     </div>
   );
 }
 
 Movie.propTypes = {
+  id: PropTypes.number.isRequired,
   coverImg: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   summary: PropTypes.string.isRequired,
