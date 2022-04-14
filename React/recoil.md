@@ -1,6 +1,6 @@
 # Recoil
 
-### recoil 설치
+### Recoil 설치
 
 `npm install recoil`
 
