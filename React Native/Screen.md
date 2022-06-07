@@ -17,7 +17,8 @@ const Stack = createNativeStackNavigator();
 </Stack.Navigator>
 ```
 
-
+</br>
+</br>
 
 ### name
 
@@ -27,7 +28,8 @@ const Stack = createNativeStackNavigator();
 navigation.navigate('Profile');
 ```
 
-
+</br>
+</br>
 
 ### options
 
@@ -54,7 +56,8 @@ navigation.navigate('Profile');
 />
 ```
 
-
+</br>
+</br>
 
 ### initialParams
 
@@ -68,7 +71,8 @@ navigation.navigate('Profile');
 />
 ```
 
-
+</br>
+</br>
 
 ### getId
 
@@ -84,7 +88,8 @@ navigation.navigate('Profile');
 
 기본적으로 호출 `navigate('ScreenName', params)`하면 이름으로 화면을 식별하고, 해당 화면으로 이동한다. `getId`를 지정하고, `undefined`를 리턴하지 않으면 화면 이름과 반환된 ID로 화면이 식별된다. 
 
-
+</br>
+</br>
 
 ### component
 
@@ -94,7 +99,8 @@ navigation.navigate('Profile');
 <Stack.Screen name="Profile" component={ProfileScreen} />
 ```
 
-
+</br>
+</br>
 
 ### getComponent
 
@@ -107,7 +113,8 @@ navigation.navigate('Profile');
 />
 ```
 
-
+</br>
+</br>
 
 ### childeren
 
@@ -121,7 +128,8 @@ navigation.navigate('Profile');
 
 `component` 추가 props를 전달해야 하는 경우 prop 대신 이 접근 방식을 사용할 수 있다.
 
-
+</br>
+</br>
 
 ### navigationKey
 
