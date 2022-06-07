@@ -96,7 +96,8 @@ const Servings = forwardRef((props, ref) => {
 export default Servings;
 ```
 
-
+</br>
+</br>
 
 ### 스피너 적용 단계
 
