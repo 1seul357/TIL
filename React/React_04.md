@@ -45,7 +45,8 @@ export default App;
 
 - map( ) : 괄호 안에 함수를 넣어서 array의 모든 요소(item)에 대해 함수를 실행시킴
 
-
+</br>
+</br>
 
 ### 2) Coin Tracker (api 호출)
 
@@ -91,7 +92,8 @@ export default App;
 
   ![result](React_04.assets/result.PNG)
 
-
+</br>
+</br>
 
 ### 3) Movie App 만들기
 
@@ -141,7 +143,8 @@ export default App;
 
 ![result](React_04.assets/result-16459752962641.PNG)
 
-
+</br>
+</br>
 
 ### 4) Movie App 만들기 (컴포넌트와 라우터 사용)
 
