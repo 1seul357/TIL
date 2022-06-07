@@ -4,7 +4,8 @@
 
 - 기본 HTML Element를 확장하여 재사용 가능한 코드를 캡슐화하는데 도움, 다시 사용할 수 있는 범용성을 위해 개발된 소프트웨어 구성 요소. Vue 컴포넌트 === Vue 인스턴스 === .vue
 
-  
+</br>
+</br>
 
 ### SFC(Single File Component)
 
@@ -22,7 +23,8 @@
   >
   > Vue 컴포넌트는 꼭 파일 단위가 아닌 단일 .html 파일 안에서도 여러 개의 컴포넌트 만들 수 있음
 
-
+</br>
+</br>
 
 ### Vue CLI
 
@@ -30,7 +32,8 @@
 - Node.js : 자바스크립트를 브라우저가 아닌 환경에서도 구동할 수 있도록 하는 자바스크립트 런타임 환경
 - NPM(Node Package Manager) : 자바스크립트 언어를 위한 패키지 관리자
 
-
+</br>
+</br>
 
 ### Babel & Webpack
 
@@ -40,7 +43,8 @@
   
   > static module bundler : 하나의 모듈 === 하나의 스크립트
 
-
+</br>
+</br>
 
 ### Vue 프로젝트 구조
 
@@ -64,7 +68,8 @@
 
 - package-lock.json : node_modules에 설치되는 모듈과 관련된 모든 의존성을 설정 및 관리
 
-
+</br>
+</br>
 
 ### Pass Props & Emit Events
 
@@ -92,7 +97,8 @@
 
 - Emit : 현재 인스턴스에서 이벤트를 트리거, 추가 인자는 리스터의 콜백 함수로 전달. 부모 컴포넌트는 자식 컴포넌트가 사용되는 템플릿에서 v-on을 사용하여 자식 컴포넌트가 보낸 이벤트를 청취
 
-
+</br>
+</br>
 
 ### Vue Router
 
@@ -114,7 +120,8 @@
 
 - Dynamic Route Matching : 동적 인자 전달. 주어진 패턴을 가진 라우트를 동일한 컴포넌트에 매핑해야 하는 경우
 
-
+</br>
+</br>
 
 ### components와 views
 
@@ -122,7 +129,8 @@
 - views/ : router에 매핑되는 컴포넌트를 모아두는 폴더
 - components/ : router에 매핑된 컴포넌트 내부에 작성하는 컴포넌트를 모아두는 폴더
 
-
+</br>
+</br>
 
 ### 라우팅 처리
 
