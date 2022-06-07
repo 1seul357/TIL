@@ -41,25 +41,29 @@ _retrieveData = async () => {
 };
 ```
 
-
+</br>
+</br>
 
 ### getItem()
 
 `key`에 대한 항목을 가져오고 완료 시 콜백을 호출한다. `Promise` 개체를 반환한다.
 
-
+</br>
+</br>
 
 ### setItem()
 
 `key` 값을 설정하고, 완료 시 콜백을 호출한다. `Promise` 개체를 반환한다.
 
-
+</br>
+</br>
 
 ### removeItem()
 
 `key`에 대한 항목을 제거하고, 완료 시 콜백을 호출한다. `Promise` 개체를 반환한다.
 
-
+</br>
+</br>
 
 ### multiSet()
 
@@ -78,7 +82,8 @@ export const setTokens = async (values, callBack) => {
   }
 ```
 
-
+</br>
+</br>
 
 ### multiGet()
 
