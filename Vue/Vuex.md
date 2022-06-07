@@ -7,7 +7,8 @@
 - 애플리케이션의 모든 컴포넌트에 대한 중앙 집중식 저장소
 - 동일한 state를 공유하는 다른 컴포넌트들도 동기화
 
-
+</br>
+</br>
 
 ### vuex(2)
 
@@ -43,7 +44,8 @@
   >
   > getters의 결과는 state 종속성에 따라 캐시되고, 종속성이 변경된 경우에만 재계산
 
-
+</br>
+</br>
 
 ### Compontent Binding Helper
 
@@ -57,7 +59,8 @@
 
 - mapMutations
 
-
+</br>
+</br>
 
 ### LocalStorage
 
@@ -65,7 +68,8 @@
 
 - 페이지가 새로고침 되어도 Vuex state를 유지시킴
 
-
+</br>
+</br>
 
 ### actions 없이 mutations으로만 state를 변경?
 
