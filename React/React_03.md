@@ -95,7 +95,8 @@
 
 - props 장점 : 반복되는 구조를 컴포넌트로 지정해서 재사용할 수 있음
 
-
+</br>
+</br>
 
 ### 2) useEffect
 
@@ -165,7 +166,8 @@ export default App;
 
 - cleanup : useEffect에서 함수 반환 시 이를 cleanup 함수라고 함, deps가 비어있는 경우에는 컴포넌트가 사라질 때 cleanup 함수 호출
 
-  
+</br>
+</br>
 
 ### 3) React Practice
 
