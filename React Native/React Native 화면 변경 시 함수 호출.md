@@ -6,7 +6,8 @@ react native에서는 탭 네비게이터의 특정 화면을 렌더링할 때, 
 2. `useFocusEffect` 를 사용한다.
 3. `useIsFocused` 를 사용한다.
 
-
+</br>
+</br>
 
 ### focus 이벤트  사용
 
@@ -31,7 +32,8 @@ function ProfileScreen({ navigation }) {
 }
 ```
 
-
+</br>
+</br>
 
 ### useFocusEffect 사용
 
@@ -55,7 +57,8 @@ function ProfileScreen({ navigation }) {
  }
  ```
 
-
+</br>
+</br>
 
 ### useIsFocused 사용
 
@@ -74,7 +77,8 @@ function Profile() {
 }
 ```
 
-
+</br>
+</br>
 
 ### 코드 적용하기
 
