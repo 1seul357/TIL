@@ -39,7 +39,7 @@ const getInformation = (Info)=>{
 
   > 하위 컴포넌트에서는 propFunction 이라는 이름의 함수로 getInformation 함수를 사용
 
-
+</br>
 
 ```javascript
 import React, { useState } from 'react';
