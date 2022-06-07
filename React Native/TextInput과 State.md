@@ -44,7 +44,8 @@ export default AuthForm;
 - `authCapitalize` : 첫 글자 대문자로 만드는 것
 - `keyboardType` : 키보드 타입 지정
 
-
+</br>
+</br>
 
 ### State
 
