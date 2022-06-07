@@ -35,7 +35,7 @@ export function getDiaries() {
 - response.data의 길이만큼 반복문을 돌리면서 diaryData 배열에 response.data 값을 푸시해준다.
 - 반복문이 끝나면 diaryData를 리턴한다.
 
-
+</br>
 
 ```javascript
 // diary_reducer.js
