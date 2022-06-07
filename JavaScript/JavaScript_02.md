@@ -14,7 +14,8 @@
 
 - 페이지를 새로고침하지 않고서도 수행되는 비동기성(일부분만 업데이트)
 
-
+</br>
+</br>
 
 ### Asynchronous JavaScript
 
@@ -45,7 +46,8 @@
 
 - 순차적인 비동기 처리 : Async callbacks, promise-style
 
-
+</br>
+</br>
 
 ### Callback function
 
@@ -65,7 +67,8 @@
 
 - callback Hell : 여러 개의 연쇄 비동기 작업할 때 발생 -> Promise 콜백 방식 사용
 
-
+</br>
+</br>
 
 ### Promise
 
@@ -107,7 +110,8 @@
   1. callback 함수는 Event Loop가 현재 실행 중인 Call Stack을 완료하기 이전에는 절대 호출되지 않음
   2. .then()을 여러번 사용하여 여러 개의 callback 함수 추가 가능(Chaining)
 
-
+</br>
+</br>
 
 ### Axios
 
@@ -115,7 +119,8 @@
 
 - 편리한 AJAX 요청 가능하게 함
 
-  
+</br>
+</br>
 
 ### async & await
 
