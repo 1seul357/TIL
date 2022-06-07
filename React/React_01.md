@@ -30,7 +30,8 @@
   ReactDOM.render(<App />, document.getElementById('root'))
   ```
 
-  
+</br>
+</br>
 
 ### 2) Next.js
 
@@ -48,7 +49,8 @@
 
 - 빠른 페이지 로드를 위한 코드 자동 분할
 
-  
+</br>
+</br>
 
 ### 3) TypeScript
 
@@ -66,7 +68,8 @@
   yarn create next-app --typescript
   ```
 
-  
+</br>
+</br>
 
 ### 4) 결과
 
