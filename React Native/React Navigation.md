@@ -4,7 +4,8 @@
 
 웹 브라우저에서는 `<a>` 태그를 통해 다른 페이지로 연결할 수 있지만 React Native는 웹 브라우저처럼 히스토리 스택이 기본적으로 되어 있지 않다. React Native에서는 stack navigator를 통해 화면을 전환하고, 탐색 기록을 관리할 수 있다. 사용자가 상호작용할 때, 앱이 탐색 스택에서 항목을 푸시하고, 팝하면서 사용자에게는 다른 화면이 표시된다.
 
-
+</br>
+</br>
 
 ### Native stack navigator library
 
@@ -88,7 +89,8 @@ export default App;
   <Stack.Navigator initialRouteName="Home">
   ```
 
-  
+</br>
+</br>
 
 ### 경로에 매개변수 전달
 
@@ -140,7 +142,8 @@ export default App;
   }
   ```
 
-  
+</br>
+</br>
 
 ### 컴포넌트에 Props 전달
 
@@ -167,7 +170,8 @@ export default App;
 </Stack.Screen>
 ```
 
-
+</br>
+</br>
 
 ### 화면 간 이동
 
