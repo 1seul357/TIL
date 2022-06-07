@@ -43,7 +43,8 @@
     >
     > 똑같은 파라미터로 호출된 리듀서 함수는 언제나 똑같은 결과값을 반환해야 한다.
 
-    
+</br>
+</br>
 
 ### Redux middleware
 
@@ -63,7 +64,8 @@
 
 - 종류 : [redux-thunk](https://github.com/reduxjs/redux-thunk), [redux-saga](https://github.com/redux-saga/redux-saga), [redux-observable](https://redux-observable.js.org/), [redux-promise-middleware](https://www.npmjs.com/package/redux-promise-middleware) 
 
-
+</br>
+</br>
 
 ### 리덕스 프로젝트 생성하기
 
