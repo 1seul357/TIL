@@ -6,7 +6,8 @@
 
 - JavaScript는 브라우저 화면을 동적으로 만들어줌
 
-  
+</br>
+</br>
 
 ### DOM(Document Object Model)
 
@@ -28,7 +29,8 @@
 
 - BOM(Browser Object Model) : 자바스크립트가 브라우저와 소통하기 위한 모델. 브라우저의 창이나 프레임을 추상화해서 프로그래밍적으로 제어할 수 있도록하는 수단
 
-  
+</br>
+</br>
 
 ### DOM 조작
 
@@ -46,7 +48,8 @@
   >
   >HTMLElement : 모든 종류의 HTML 요소, 부모 element의 속성 상속
 
-
+</br>
+</br>
 
 ### DOM 선택
 
@@ -76,7 +79,8 @@
   >
   > Static Collection : DOM이 변경되어도 collection 내용에는 영향을 주지 않음
 
-
+</br>
+</br>
 
 ### DOM 변경
 
@@ -92,7 +96,8 @@
 
 - XSS (Cross-site-Scripting) : 공격자가 웹 사이트 클라이언트 측 코드에 악성 스크립트 삽입해 공격
 
-
+</br>
+</br>
 
 ### DOM 삭제
 
@@ -100,7 +105,8 @@
 
 - Node.removeChild() : DOM에서 자식 Node를 제거하고 제거된 Node를 반환
 
-
+</br>
+</br>
 
 ### DOM 속성
 
@@ -108,7 +114,8 @@
 
 - Element.getAttribute(attributeName) : 해당 요소의 지정된 값(문자열)을 반환, attributeName은 값을 얻고자 하는 속성의 이름
 
-
+</br>
+</br>
 
 ### EVENT
 
