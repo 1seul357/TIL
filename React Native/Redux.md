@@ -4,7 +4,8 @@
 
 애플리케이션 상태 (State)를 용이하게 관리하기 위한 프레임워크 (오픈 소스 자바스크립트 라이브러리)
 
-
+</br>
+</br>
 
 ### Action
 
@@ -19,7 +20,8 @@
   }
   ```
 
-
+</br>
+</br>
 
 ### Action Creator
 
@@ -36,7 +38,8 @@
   }
   ```
 
-  
+</br>
+</br>
 
 ### dispatch
 
@@ -44,21 +47,24 @@
 - Reducer에게 어떤 action이 발생했는지 알리는 함수
 - dispatch(action), dispatch(ActionCreator(param))
 
-
+</br>
+</br>
 
 ### Store
 
 - 하나의 App에 단 하나의 Store만 존재
 - state, Reducer 및 기타 내장 함수 존재
 
-
+</br>
+</br>
 
 ### State
 
 - 데이터 및 UI 상태 등 어플리케이션을 유지하기 위한 정보
 - state의 변경, View의 변경
 
-
+</br>
+</br>
 
 ### Reducer
 
@@ -66,7 +72,8 @@
 - Input : state, action
 - output: state'
 
-
+</br>
+</br>
 
 ### Connect
 
@@ -76,7 +83,8 @@
 - Store가 가진 state를 어떻게 props에 엮을지 -> mapStateToProps
 - Reducer에 Action을 알리는 함수 dispatch를 어떻게 props에 엮을지 -> mapDispatchToProps -> connect (mapStateToProps, mapDispatchToProps)
 
-
+</br>
+</br>
 
 ### Redux의 3원칙
 
