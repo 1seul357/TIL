@@ -24,7 +24,7 @@ heapq.heapify(x)
 
 ```
 
-
+</br>
 
 예시
 
