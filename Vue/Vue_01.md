@@ -83,9 +83,8 @@
   3. Options/Data - methods : Vue 인스턴스에 추가할 메서드
 
      > interpolations과 directive에서 사용 가능, this 키워드 통해 접근 가능
->
+     >
      > 화살표 함수를 'data'에서 사용할 수 없음 (데이터와 메서드 정의)
-
   4. this 키워드 : Vue 함수 객체 내에서 vue 인스턴스를 가리킴
 
 </br>
@@ -100,7 +99,7 @@
      
      > 전달인자 : <a v-bind:href="url"> 콜론을 통해 전달인자를 받을 수 있음
      >
-     > 수식어 . <form v-on:submit.prevent="onSubmit"> directive를 특별한 방법으로 바인딩할 때 사용
+     > 수식어 : <form v-on:submit.prevent="onSubmit"> directive를 특별한 방법으로 바인딩할 때 사용
 
 1. **v-text** : Element를 contextText로 업데이트
 

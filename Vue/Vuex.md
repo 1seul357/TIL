@@ -1,4 +1,4 @@
-# Vue
+# Vuex
 
 ### vuex
 
