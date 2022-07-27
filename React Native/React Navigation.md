@@ -164,11 +164,11 @@ export default App;
 
   > props => 를 통해 데이터를 전달할 수 있다.
 
-```javascript
-<Stack.Screen name="Home">
-  {props => <HomeScreen {...props} extraData={someData} />}
-</Stack.Screen>
-```
+  ```javascript
+  <Stack.Screen name="Home">
+    {props => <HomeScreen {...props} extraData={someData} />}
+  </Stack.Screen>
+  ```
 
 </br>
 </br>
