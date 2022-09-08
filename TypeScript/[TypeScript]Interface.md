@@ -1,5 +1,65 @@
 # Interface
 
+### interface
+
+타입스크립트에서는 type과 interface를 사용하여 객체의 타입을 정의하고, 사용할 수 있다. 인터페이스는 일반적으로 타입 체크를 위해 사용되며 변수, 함수, 클래스에 사용할 수 있다. type과 interface 모두 객체의 타입과 이름을 지정한다는 점에서 공통점이 있지만 type은 선언적 확장이 불가능하다는 점에서 차이가 있다.
+
+인터페이스에 선언된 프로퍼티 또는 메소드의 구현을 강제하여 일관성을 유지할 수 있도록 한다. ES6는 인터페이스를 지원하지 않지만 TypeScript에서는 사용할 수 있다. TypeScript 공식 문서에서는 인터페이스의 사용을 권장한다.
+
+</br>
+
+</br>
+
+### Type과 Interface
+
+```typescript
+// interface
+intereface student {
+  id: number;
+  name: string;
+};
+
+const interfaceStudent: student = {
+  id: 170,
+  name: '슬기',
+};
+
+// type
+type student = {
+  id: number;
+  name: string;
+};
+
+const typeStudent: student = {
+  id: 270,
+  name: '슬기'
+}
+```
+
+</br>
+
+</br>
+
+### 함수와 인터페이스
+
+```typescript
+interface interFunc {
+  (num: number): number;
+}
+
+const interfaceFunc: interFunc = function (num: number) {
+  return num * num;
+}
+
+console.log(interfaceFunc(10));
+```
+
+</br>
+
+</br>
+
+### 선언적 확장
+
 ```typescript
 interface student {
   no: number;
@@ -26,10 +86,6 @@ type _student = {
   name: string;
 };
 ```
-
-### interface
-
-인터페이스는 상호 간에 정의한 약속 혹은 규칙이다. 객체의 타입과 이름을 지정할 수 있다. type과 interface 모두 객체의 타입과 이름을 지정한다는 점에서 공통점이 있지만 type은 선언적 확장이 불가능하다는 점에서 차이가 있다. 또한 interface는 객체에서만 사용이 가능하다.
 
 </br>
 
