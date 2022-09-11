@@ -82,10 +82,12 @@ type _student = {
 };
 
 type _student = {
-  // errolr : 식별자 중복
+  // error : 식별자 중복
   name: string;
 };
 ```
+
+인터페이스와 타입의 가장 큰 차이점인 선언적 확장이다. 인터페이스는 같은 이름을 가진 `student` 로 no, name등 속성을 확장할 수 있지만 타입은 같은 이름을 두번 선언할 시 에러가 발생한다.
 
 </br>
 
