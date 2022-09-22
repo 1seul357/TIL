@@ -16,13 +16,11 @@
 
 연결 대상에 대한 정보가 들어있지 않은 Socket을 생성한다.
 
-</br>
 
 #### 2. 연결 요청 (Connection)
 
 연결하고 싶은 대상에게 요청을 보낸다. IP 주소와 포트 번호로 연결하고 싶은 대상을 특정한다. 요청을 보내면 요청에 대한 결과가 돌아오는데, 이때 Connect의 실행이 끝난다.
 
-</br>
 
 #### 3. 데이터의 송수신 (Send, Recieve)
 
@@ -30,7 +28,6 @@
 - 수신(Recieve) 할 때에는 상대방이 언제, 얼만큼의 데이터를 보낼 것인지 알 수 없다.
 - 수신하는 API는 별도의 Thread에서 진행하게 된다.
 
-</br>
 
 #### 4. Socket 닫기
 
@@ -46,7 +43,6 @@
 
 Client Socket 생성 시와 마찬가지로, 연결 대상에 대한 정보가 들어있지 않은 껍데이 Socket을 생성한다.
 
-</br>
 
 #### 2. Server Socket 바인딩 (bind)
 
@@ -54,19 +50,16 @@ Socket과 Port 번호를 바인딩한다.
 
 여러가지의 프로세스가 동시에 실행될 때, 각 프로세스를 구분하기 위해서 Socket과 Port 번호를 결합 (Bind) 하는 작업이 필요하다. 하나의 프로세스는 같은 Port를 가진 Socket을 여러개 열 수 있다.
 
-</br>
 
 #### 3. Client 연결 요청 대기 (listen)
 
 Server Socket에서 Port 번호와 바인딩 작업이 끝나면 Client로부터의 연결 요청을 받을 준비가 된 것이다. Client가 연결 요청을 할 때까지 계속 기다리면서 연결 요청이 오면 대기 상태를 종료하고, 리턴한다.
 
-</br>
 
 #### 4. Client 연결 수립 (accept)
 
 실직적인 연결이 이루어진다. 연결 요청을 받아들여 소켓 간의 연결을 수립한다. 중요한 점은 클라이언트 소켓과 연결이 만들어지는 소켓은 앞에서 사용한 서버 소켓이 아닌 accpet API 내부에서 새로 만들어지는 소켓이라는 점이다. 앞에서 사용한 서버 소켓은 또 다른 연결 요청을 처리하기 위해 다시 대기(listen)하거나 서버 소켓을 닫는(close) 역할을 한다.
 
-</br>
 
 #### 5. 데이터의 송수신 (Send, Recieve)
 
@@ -74,7 +67,6 @@ Server Socket에서 Port 번호와 바인딩 작업이 끝나면 Client로부터
 - 수신(Recieve) 할 때에는 상대방이 언제, 얼만큼의 데이터를 보낼 것인지 알 수 없다.
 - 수신하는 API는 별도의 Thread에서 진행하게 된다.
 
-</br>
 
 #### 6. Socket 닫기
 
@@ -90,6 +82,10 @@ WebSocket은 Web에서 두 프로그램 간의 메시지를 교환하기 위한 
 
 IP, Port 통신을 한다는 점은 같지만 웹 브라우저는 HTTP Protocol, 소켓은 TCP/IP 프로토콜을 사용한다는 점에서 차이가 있다. 웹 브라우저는 HTTP Protocol을 사용하므로 실시간 통신을 할 수 없는데, 이러한 문제를 해결하기 위해 WebSocket Protocol을 사용한다.
 
+</br>
+
+</br>
+
 ### WebSocket 동작 방법
 
 #### 1. HandShaking
@@ -98,13 +94,11 @@ IP, Port 통신을 한다는 점은 같지만 웹 브라우저는 HTTP Protocol,
 
 WebSocket을 호출하여 Socket을 생성하면 즉시 연결이 시작되고, 연결이 유지되는 동안 브라우저는 Header를 통해 서버에 WebSocket을 지원하는지 물어본다. 이때 서버가 맞다는 응답을 하면 HTTP Protocol 대신 WebSocket Protocol로 통신된다.
 
-</br>
 
 #### 2. Data Transfer
 
 WebSocket 연결이 되면 데이터를 송수신 할 수 있다. 
 
-</br>
 
 #### 3. Close HandShaking
 
